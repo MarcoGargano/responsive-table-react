@@ -6,6 +6,8 @@
 
 ![Preview](https://iili.io/HWLD8Je.gif)
 
+[Live demo](https://codepen.io/marcogargano/full/vYzmPGG)
+
 > Simple and high settable table for all devices, create your component with a super simple code: <br>
 > 👉 **just repeat your thead value as `data-label`** in each th and td.
 
