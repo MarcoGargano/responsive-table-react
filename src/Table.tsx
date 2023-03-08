@@ -4,7 +4,7 @@ type TableProps = {
   data: Record<string, string>[];
 };
 
-export const ResponsiveTable: React.FC<TableProps> = ({ data }) => {
+const ResponsiveTable: React.FC<TableProps> = ({ data }) => {
   const header = Object.keys(data[0]);
 
   return (
@@ -41,3 +41,5 @@ export const ResponsiveTable: React.FC<TableProps> = ({ data }) => {
     </table>
   );
 };
+
+export { ResponsiveTable };

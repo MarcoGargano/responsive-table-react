@@ -1,1 +1,3 @@
-export { ResponsiveTable } from "./Table";
+import { ResponsiveTable } from "./Table";
+
+export { ResponsiveTable };
