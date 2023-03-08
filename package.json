@@ -1,5 +1,5 @@
 {
-  "name": "responsive-tablereact",
+  "name": "responsive-table-react",
   "version": "1.0.0",
   "type": "module",
   "main": "src/index.ts",
