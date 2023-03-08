@@ -4,6 +4,8 @@
 #### 🖥️ On desktop as a classic table 
 #### 📱 On mobile as collapsable rows
 
+![Preview](https://iili.io/HWLD8Je.gif)
+
 > Simple and high settable table for all devices, create your component with a super simple code: <br>
 > 👉 **just repeat your thead value as `data-label`** in each th and td.
 
