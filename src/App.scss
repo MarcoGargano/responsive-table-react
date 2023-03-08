@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 2rem;
+}
+h6 {
+  margin: 0;
+}
+pre {
+  background: #eee;
+  padding: 0.7rem 1rem;
+  display: inline-block;
+  overflow: scroll;
+  width: 26rem;
+  max-width: 90%;
+}
+table.🏓 {
+  margin: 2rem 0;
+  padding: 1rem;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+  border: solid 1px #fff;
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+  thead {
+    text-align: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    th {
+      padding: 1rem;
+      font-size: 90%;
+      border-bottom: solid 2px #fff;
+      border: solid 1px #fff;
+      background-color: rgb(238 238 238 / 50%);
+      backdrop-filter: blur(5px);
+      border-radius: 0.5rem;
+    }
+    @media screen and (max-width: 600px) {
+      tr {
+        background-color: rgb(255 255 255 / 50%);
+        backdrop-filter: blur(5px);
+        display: block;
+      }
+      th {
+        backdrop-filter: blur(0px);
+        background-color: transparent;
+        border-color: transparent;
+        padding: 1rem 0 1rem 0.2rem;
+        display: inline-block;
+        font-size: 80%;
+      }
+    }
+  }
+  tbody {
+    td {
+      border-top: solid 1px #fff;
+      border-bottom: solid 1px #fff;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      text-align: left;
+    }
+    tr:hover td {
+      box-shadow: inset 0 0 0 2px white;
+      background-color: rgb(238 238 238 / 50%);
+      color: lightseagreen;
+    }
+    @media screen and (max-width: 600px) {
+      td {
+        display: block;
+        text-align: left;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        background: #eee;
+        &:before {
+          content: attr(data-label);
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-right: 0.5rem;
+          opacity: 0.5;
+        }
+        &:after {
+          content: " ";
+          position: absolute;
+          right: 1.2rem;
+          left: auto;
+          top: 1rem;
+          bottom: auto;
+          height: 10px;
+          width: 10px;
+          border-bottom: solid 1px #333;
+          border-right: solid 1px #333;
+          transform: rotate(45deg);
+          pointer-events: none;
+        }
+      }
+      td:not(:first-child) {
+        position: relative;
+        height: 0;
+        padding: 0 1rem;
+        opacity: 0;
+        overflow: hidden;
+        &:before {
+          // content: "\00B7  " attr(data-label) " ";
+          content: attr(data-label);
+          font-size: 10px;
+          font-weight: 500;
+          color: seagreen;
+          text-transform: uppercase;
+          position: absolute;
+          top: -1px;
+        }
+        &:after {
+          content: none;
+        }
+      }
+      tr:hover td {
+        height: auto;
+        overflow: visible;
+        opacity: 1;
+        color: white;
+        background-color: lightseagreen;
+        &:after {
+          border-bottom: none;
+          border-right: none;
+          border-top: solid 1px white;
+          border-left: solid 1px white;
+          top: 1.4rem;
+        }
+      }
+      tr:hover td:not(:first-child) {
+        background-color: white;
+        color: #333;
+        padding: 0.7rem 1rem 0.5rem;
+      }
+    }
+  }
+}
