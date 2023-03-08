@@ -1,12 +1,11 @@
 # Fun with table 🏓
 ## Super flexible & responsive table, CSS only
 
-#### 🖥️ On desktop as a classic table 
-#### 📱 On mobile as collapsable rows
+#### 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows
 
 ![Preview](https://iili.io/HWLD8Je.gif)
 
-### 👉👉👉 [Live demo](https://codepen.io/marcogargano/full/vYzmPGG)
+### 👉 [Live demo](https://codepen.io/marcogargano/full/vYzmPGG)
 
 > Simple and high settable table for all devices, create your component with a super simple code: <br>
 > **just repeat your thead value as `data-label`** in each th and td.
