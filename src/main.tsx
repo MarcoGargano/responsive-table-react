@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Table } from "./App";
+import { ResponsiveTable } from "./Table";
 
 const data = [
   {
@@ -14,6 +14,6 @@ const data = [
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <Table data={data} />
+    <ResponsiveTable data={data} />
   </React.StrictMode>
 );
