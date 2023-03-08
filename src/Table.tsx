@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./Table.scss";
 
 type TableProps = {
   data: Record<string, string>[];
