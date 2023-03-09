@@ -1,17 +1,10 @@
 # Fun with table 🏓
-## Super flexible & responsive table for React, CSS only
-
+### Start to use your table also on mobile with a super user-friendly experience.
 #### 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows
+### Super flexible & responsive table for React, CSS only
 
 Simple and high settable table for all devices, create your component with a super tiny code: <br>
 **just repeat your thead value as `data-label`** in each th and td.
-
-![npm](https://badgen.net/npm/v/responsive-table-react)
-![npm](https://badgen.net/npm/dw/responsive-table-react)
-![npm](https://badgen.net/npm/dt/responsive-table-react)
-![github](https://badgen.net/github/stars/marcogargano/responsive-table-react)
-![github](https://badgen.net/github/last-commit/marcogargano/responsive-table-react)
-![github](https://badgen.net/github/tags/marcogargano/responsive-table-react)
 
 #### Discover
 - [🔧 Installation](#-installation)
@@ -23,14 +16,25 @@ Simple and high settable table for all devices, create your component with a sup
 - 👉 [**NPM Package**](https://www.npmjs.com/package/responsive-table-react)
 - 👉 [**Prototype demo**](https://codepen.io/marcogargano/full/vYzmPGG)
 
+---
+
+![npm](https://badgen.net/npm/v/responsive-table-react)
+![npm](https://badgen.net/npm/dw/responsive-table-react)
+![npm](https://badgen.net/npm/dt/responsive-table-react)
+![github](https://badgen.net/github/stars/marcogargano/responsive-table-react)
+![github](https://badgen.net/github/last-commit/marcogargano/responsive-table-react)
+![github](https://badgen.net/github/tags/marcogargano/responsive-table-react)
+
 <img src="https://iili.io/HWLD8Je.gif" width="100%">
 
 ---
 
 ## 🔧 Installation
-Install by NPM: `npm i responsive-table-react`
-
-Here you can find the package on NPM: [responsive-table-react](https://www.npmjs.com/package/responsive-table-react)
+**Install by NPM**: 
+```
+npm i responsive-table-react
+```
+Here you can find the package on NPM: [responsive-table-react](https://www.npmjs.com/package/responsive-table-react).
 
 ---
 
@@ -79,6 +83,6 @@ Here you can find the package on NPM: [responsive-table-react](https://www.npmjs
 
 ## 🍕 Give me a pizza
 
-If you like this component and you want to support us... [PIZZAAA😋😋😋](https://www.paypal.com/paypalme/MarcoGargano/10)
+If you like this component and you want to support us... [**PIZZAAA😋😋😋**](https://www.paypal.com/paypalme/MarcoGargano/10)
 
 
