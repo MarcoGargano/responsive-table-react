@@ -57,7 +57,7 @@ Here you can find the package on NPM: [responsive-table-react](https://www.npmjs
 
 ---
 
-# 👯‍♀️ Collaborators
+# ✌️ Collaborators
 
 
 - 🦁 [Gabriele](https://github.com/GabAlpha)
