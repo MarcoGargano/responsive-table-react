@@ -8,7 +8,8 @@ Simple and high settable table for all devices, create your component with a sup
 
 - [🔧 Installation](#-installation)
 - [🔬 Instruction](#-instruction)
-- [👯‍♂️ Collaborators](#-collaborators)
+- [😊 Collaborators](#-collaborators)
+- [🍕 Pizza time](#-give-me-a-pizza)
 
 ---
 
@@ -20,14 +21,18 @@ Simple and high settable table for all devices, create your component with a sup
 
 ---
 
-# 🔧 Installation
+## 🔧 Installation
 Install by NPM: `npm i responsive-table-react`
 
 Here you can find the package on NPM: [responsive-table-react](https://www.npmjs.com/package/responsive-table-react)
 
 ---
 
-# 🔬 Instruction
+## 🔬 Instruction
+
+1. ...
+2. ...
+3. ...
 
 ##### • TABLE HEAD:
 <pre>
@@ -57,8 +62,14 @@ Here you can find the package on NPM: [responsive-table-react](https://www.npmjs
 
 ---
 
-# ✌️ Collaborators
+## 😊 Collaborators
 
 
 - 🦁 [Gabriele](https://github.com/GabAlpha)
 - 🐻 [Marco](https://github.com/MarcoGargano)
+
+---
+
+## 🍕 Give me a pizza
+
+If you like this component and you want to support us... [PIZZAAA😋😋😋](https://www.paypal.com/paypalme/MarcoGargano/10)
