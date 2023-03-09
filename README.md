@@ -1,14 +1,33 @@
 # Fun with table 🏓
-## Super flexible & responsive table, CSS only
+## Super flexible & responsive table for React, CSS only
 
 #### 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows
 
-![Preview](https://iili.io/HWLD8Je.gif)
+Simple and high settable table for all devices, create your component with a super tiny code: <br>
+**just repeat your thead value as `data-label`** in each th and td.
 
-### 👉 [Live demo](https://codepen.io/marcogargano/full/vYzmPGG)
+- [🔧 Installation](#-installation)
+- [🔬 Instruction](#-instruction)
+- [👯‍♂️ Collaborators](#-collaborators)
 
-> Simple and high settable table for all devices, create your component with a super simple code: <br>
-> **just repeat your thead value as `data-label`** in each th and td.
+---
+
+### Links:
+- 👉 [**NPM Package**](https://www.npmjs.com/package/responsive-table-react)
+- 👉 [**Prototype demo**](https://codepen.io/marcogargano/full/vYzmPGG)
+
+<img src="https://iili.io/HWLD8Je.gif" width="100%">
+
+---
+
+# 🔧 Installation
+Install by NPM: `npm i responsive-table-react`
+
+Here you can find the package on NPM: [responsive-table-react](https://www.npmjs.com/package/responsive-table-react)
+
+---
+
+# 🔬 Instruction
 
 ##### • TABLE HEAD:
 <pre>
@@ -35,3 +54,11 @@
  &lt;/tr&gt;
  ...
 </pre>
+
+---
+
+# 👯‍♀️ Collaborators
+
+
+- 🦁 [Gabriele](https://github.com/GabAlpha)
+- 🐻 [Marco](https://github.com/MarcoGargano)
