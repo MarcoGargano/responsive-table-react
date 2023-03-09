@@ -6,14 +6,20 @@
 Simple and high settable table for all devices, create your component with a super tiny code: <br>
 **just repeat your thead value as `data-label`** in each th and td.
 
+![npm](https://badgen.net/npm/v/responsive-table-react)
+![npm](https://badgen.net/npm/dw/responsive-table-react)
+![npm](https://badgen.net/npm/dt/responsive-table-react)
+![github](https://badgen.net/github/stars/marcogargano/responsive-table-react)
+![github](https://badgen.net/github/last-commit/marcogargano/responsive-table-react)
+![github](https://badgen.net/github/tags/marcogargano/responsive-table-react)
+
+#### Discover
 - [🔧 Installation](#-installation)
 - [🔬 Instruction](#-instruction)
 - [😊 Collaborators](#-collaborators)
 - [🍕 Pizza time](#-give-me-a-pizza)
 
----
-
-### Links:
+#### Links
 - 👉 [**NPM Package**](https://www.npmjs.com/package/responsive-table-react)
 - 👉 [**Prototype demo**](https://codepen.io/marcogargano/full/vYzmPGG)
 
@@ -66,10 +72,13 @@ Here you can find the package on NPM: [responsive-table-react](https://www.npmjs
 
 
 - 🦁 [Gabriele](https://github.com/GabAlpha)
-- 🐻 [Marco](https://github.com/MarcoGargano)
+- 🐷 [Marco](https://github.com/MarcoGargano)
+- 🐻‍❄️ [Gustavo](https://github.com/gustavodipietrogva)
 
 ---
 
 ## 🍕 Give me a pizza
 
 If you like this component and you want to support us... [PIZZAAA😋😋😋](https://www.paypal.com/paypalme/MarcoGargano/10)
+
+
