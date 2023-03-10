@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
 
-table.🏓 {
+$breakpoint: 600px;
+
+table.rtr-table {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   margin: 1rem 0;
@@ -10,6 +12,42 @@ table.🏓 {
   background-color: #fff;
   border-radius: 1rem;
   position: relative;
+  ::selection {
+    color: black;
+    background: #eeff00;
+  }  
+  &.bordered {
+      border: solid 1px #ddd;
+      border-top: none;
+      border-left: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0;
+      & th, & tr, & td {
+        border: solid 1px #ddd;
+        border-bottom: none;
+        border-right: none;
+        border-radius: 0;
+      }
+      tr:nth-child(even){
+        background-color: #fafafa;
+      }
+      @media screen and (max-width: $breakpoint) {
+        border: none;
+        border-bottom: solid 1px #ddd;
+        & th, & td {
+          border: none;
+        }
+        & tr {
+          border: none;
+          border-top: solid 1px #ddd;
+          border-bottom: solid 1px #ddd;
+          & td:first-child {
+            border-top: solid 1px #ddd;            
+          }
+        }
+      }
+  }
   thead {
     text-align: left;
     width: 100%;
@@ -25,7 +63,7 @@ table.🏓 {
       backdrop-filter: blur(5px);
       border-radius: 0.5rem;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $breakpoint) {
       tr {
         background-color: rgb(255 255 255 / 50%);
         backdrop-filter: blur(5px);

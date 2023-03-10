@@ -9,7 +9,7 @@ const ResponsiveTable: React.FC<TableProps> = ({ data }) => {
 
   return (
     <table
-      className="🏓"
+      className="rtr-table bordered"
       cellPadding="0"
       cellSpacing="0"
       border={0}
