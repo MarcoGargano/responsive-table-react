@@ -1,29 +1,32 @@
 # Fun with table 🏓
-### Start to use your table also on mobile with a super user-friendly experience.
-#### 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows
-### Super flexible & responsive table for React, CSS only
+## Flexible & responsive table for React
+### 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows
+### A super user-friendly experience, start to use your table also on mobile!
 
-Simple and high settable table for all devices, create your component with a super tiny code: <br>
-**just repeat your thead value as `data-label`** in each th and td.
-
-#### Discover
+#### Discover:
 - [🔧 Installation](#-installation)
 - [🔬 Instruction](#-instruction)
 - [😊 Collaborators](#-collaborators)
 - [🍕 Pizza time](#-give-me-a-pizza)
 
-#### Links
-- 👉 [**NPM Package**](https://www.npmjs.com/package/responsive-table-react)
-- 👉 [**Prototype demo**](https://codepen.io/marcogargano/full/vYzmPGG)
-
 ---
 
+### Links:
+- 👉 [**Prototype demo**](https://codepen.io/marcogargano/full/vYzmPGG)
+
+
+- 👉 [**NPM Package**](https://www.npmjs.com/package/responsive-table-react) <br>
 ![npm](https://badgen.net/npm/v/responsive-table-react)
 ![npm](https://badgen.net/npm/dw/responsive-table-react)
 ![npm](https://badgen.net/npm/dt/responsive-table-react)
-![github](https://badgen.net/github/stars/marcogargano/responsive-table-react)
-![github](https://badgen.net/github/last-commit/marcogargano/responsive-table-react)
+
+- 👉 [**GitHub Repository**](https://github.com/MarcoGargano/responsive-table-react) <br>
+![npm](https://badgen.net/github/stars/MarcoGargano/responsive-table-react)
+![npm](https://badgen.net/github/forks/MarcoGargano/responsive-table-react)
 ![github](https://badgen.net/github/tags/marcogargano/responsive-table-react)
+![github](https://badgen.net/github/last-commit/marcogargano/responsive-table-react)
+
+---
 
 <img src="https://iili.io/HWLD8Je.gif" width="100%">
 
@@ -39,6 +42,9 @@ Here you can find the package on NPM: [responsive-table-react](https://www.npmjs
 ---
 
 ## 🔬 Instruction
+
+Simple and high settable table for all devices, CSS only; create your component with a super tiny code: <br>
+**just repeat your thead value as `data-label`** in each th and td.
 
 1. ...
 2. ...
