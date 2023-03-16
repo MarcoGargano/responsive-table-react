@@ -55,13 +55,13 @@ Simple and high settable table for all devices, CSS only; create your component 
 Import with
 
 ```js
-import { ResponsiveTable } from "responsive-table-react"
+import { ResponsiveTable } from "responsive-table-react";
 ```
 
 ### Props
 
 ```ts
-data: Record<string, string>[]
+data: Record < string, string > [];
 ```
 
 The actual data for the table
@@ -78,10 +78,10 @@ The keys are used as headers for the columns
     "Phone": "+39 333 1234567"
   },
   {
-    "N": "..."
-    "Name": "..."
-    "Surname": "..."
-    "E-mail": "..."
+    "N": "...",
+    "Name": "...",
+    "Surname": "...",
+    "E-mail": "...",
     "Phone": "..."
   }
 ]
