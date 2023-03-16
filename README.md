@@ -54,44 +54,44 @@ Simple and high settable table for all devices, CSS only; create your component 
 
 Import with
 
-```
+```js
 import { ResponsiveTable } from "responsive-table-react"
 ```
 
 ### Props
 
-`data: Record<string, string>[]`
+```ts
+data: Record<string, string>[]
+```
 
 The actual data for the table
 
 The keys are used as headers for the columns
 
-i.g.
-
-```
+```json
 [
   {
-    N: "01",
-    Name: "Marco",
-    Surname: "Garsin",
+    "N": "01",
+    "Name": "Marco",
+    "Surname": "Garsin",
     "E-mail": "mgarsin@email.com",
-    Phone: "+39 333 1234567"
+    "Phone": "+39 333 1234567"
   },
   {
-    N: "..."
-    Name: "..."
-    Surname: "..."
+    "N": "..."
+    "Name": "..."
+    "Surname": "..."
     "E-mail": "..."
-    Phone: "..."
+    "Phone": "..."
   }
-];
+]
 ```
 
 Each object inside the array must always have **the same keys**
 
 Usage
 
-```
+```jsx
 <ResponsiveTable data={data} />
 ```
 
