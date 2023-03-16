@@ -1,8 +1,25 @@
 {
   "name": "responsive-table-react",
-  "version": "1.1.0",
+  "description": "Super flexible & responsive table, CSS only for React",
+  "version": "1.1.1",
   "type": "module",
-  "main": "src/index.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcoGargano/responsive-table-react"
+  },
+  "keywords": [
+    "table",
+    "responsive",
+    "react",
+    "css",
+    "mobile",
+    "desktop",
+    "userfriendly",
+    "flexible",
+    "collapsable"
+  ],
+  "main": "index.js",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -15,6 +32,6 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+    "build": "npm run clean && tsc && cp package.json README.md src/Table.scss ./dist"
   }
 }
