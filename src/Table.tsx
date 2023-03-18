@@ -1,8 +1,13 @@
 import { ReactNode, useState } from "react";
 import "./Table.css";
-import { TableProps } from "./types";
+import { ResponsiveTableColumn } from "./types";
 
-const ResponsiveTable = ({ data, columns }: TableProps) => {
+export type TableProps = {
+  data: Record<string | number, ReactNode>[];
+  columns: ResponsiveTableColumn[]
+};
+
+const ResponsiveTable:React.FC<TableProps> = ({ data, columns }) => {
   const columnsIds = columns.map(c => c.id)
   const rows = data.map(d => columnsIds.map(c => d[c]))
 
