@@ -92,6 +92,18 @@ const columns = [
   )
 ```
 
+### Props
+
+### designOptions
+- `bordered?: boolean` <br/>
+Add the border
+
+- `dark?: boolean` <br/>
+Add the dark mode 
+
+- `color?: string` <br/>
+Set the master color 
+
 ---
 
 ## 😊 Collaborators
