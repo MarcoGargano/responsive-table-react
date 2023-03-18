@@ -1,13 +1,15 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useMemo, useState } from "react";
 import "./Table.css";
-import { ResponsiveTableColumn } from "./types";
+import { ResponsiveTableColumn, ResponsiveTableDesignOptions } from "./types";
+import { getDesignOptionsClasses } from "./utils";
 
 export type TableProps = {
   data: Record<string | number, ReactNode>[];
   columns: ResponsiveTableColumn[]
+  designOptions?: ResponsiveTableDesignOptions
 };
 
-const ResponsiveTable:React.FC<TableProps> = ({ data, columns }) => {
+const ResponsiveTable:React.FC<TableProps> = ({ data, columns, designOptions }) => {
   const columnsIds = columns.map(c => c.id)
   const rows = data.map(d => columnsIds.map(c => d[c]))
 
@@ -17,9 +19,11 @@ const ResponsiveTable:React.FC<TableProps> = ({ data, columns }) => {
     return <tr className={isOpened ? 'open' : ''} onClick={() => setIsOpened(!isOpened)} key={`responsive-table-row-${idx}`}>{row.map((value, idx) => <td data-label={columnsIds[idx]} key={`responsive-table-value-${idx}`}>{value}</td>)}</tr>;
   }
 
+  const designOptionsClasses = useMemo(() => getDesignOptionsClasses(designOptions), [])
+
   return (
     <table
-      className="rtr-table bordered"
+      className={`rtr-table ${designOptionsClasses}`}
       cellPadding="0"
       cellSpacing="0"
       border={0}
