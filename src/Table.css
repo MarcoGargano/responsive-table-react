@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
 :root {
-  --custom-color-table: var(--custom-color-table); }
+  --custom-color-table: lightseagreen; }
 
 table.rtr-table {
   font-family: "Rubik", sans-serif;
