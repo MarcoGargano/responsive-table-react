@@ -58,41 +58,38 @@ Import with
 import { ResponsiveTable } from "responsive-table-react";
 ```
 
-### Props
+### Example
 
 ```ts
-data: Record < string, string > [];
-```
+const columns = [
+    {
+      "id": "name",
+      "text": "Name"
+    },
+    {
+      "id": "surname",
+      "text": "Surname"
+    }
+  ]
 
-The actual data for the table
+  const data = [
+    {
+      "name": "Mark",
+      "surname": "Garsin"
+    },
+    {
+      "name": "Gabriel",
+      "surname": "Betappi"
+    },
+    {
+      "name": "Gustav",
+      "surname": "Mahler",
+    }
+  ]
 
-The keys are used as headers for the columns
-
-```json
-[
-  {
-    "N": "01",
-    "Name": "Marco",
-    "Surname": "Garsin",
-    "E-mail": "mgarsin@email.com",
-    "Phone": "+39 333 1234567"
-  },
-  {
-    "N": "...",
-    "Name": "...",
-    "Surname": "...",
-    "E-mail": "...",
-    "Phone": "..."
-  }
-]
-```
-
-Each object inside the array must always have **the same keys**
-
-Usage
-
-```jsx
-<ResponsiveTable data={data} />
+  return (
+    <ResponsiveTable columns={columns} data={data} />
+  )
 ```
 
 ---
