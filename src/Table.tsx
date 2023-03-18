@@ -1,12 +1,6 @@
 import { ReactNode } from "react";
 import "./Table.scss";
-
-type ResponsiveTableColumn = {id: string, text: string}
-
-type TableProps = {
-  data: Record<string, ReactNode>[];
-  columns: ResponsiveTableColumn[]
-};
+import { TableProps } from "./types";
 
 const ResponsiveTable = ({ data, columns }: TableProps) => {
   const columnsIds = columns.map(c => c.id)
@@ -33,7 +27,9 @@ const ResponsiveTable = ({ data, columns }: TableProps) => {
       </thead>
 
       <tbody>
-          {rows.map(row => <tr>{row.map((value, idx) => <td data-label={columnsIds[idx]}>{value}</td> )}</tr>)}
+        {rows.map((row, idx) => {
+          return <tr key={`responsive-table-row-${idx}`}>{row.map((value, idx) => <td data-label={columnsIds[idx]} key={`responsive-table-value-${idx}`}>{value}</td>)}</tr>;
+        })}
       </tbody>
     </table>
   );
