@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+:root {
+  --custom-color-table: var(--custom-color-table); }
+
 table.rtr-table {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
@@ -10,14 +13,14 @@ table.rtr-table {
   border-radius: 1rem;
   position: relative; }
   @media screen and (min-width: 600px) {
-    table.rtr-table[class*="#cc0000"] tr:hover td {
-      color: #cf0000; } }
+    table.rtr-table.custom-color tr:hover td {
+      color: var(--custom-color-table); } }
   @media screen and (max-width: 600px) {
-    table.rtr-table[class*="#cc0000"] tr:hover td {
-      background-color: #cf0000; } }
+    table.rtr-table.custom-color tr:hover td {
+      background-color: var(--custom-color-table); } }
   @media screen and (max-width: 600px) {
-    table.rtr-table[class*="#cc0000"] td:not(:first-child):before {
-      color: #cf0000; } }
+    table.rtr-table.custom-color td:not(:first-child):before {
+      color: var(--custom-color-table); } }
   table.rtr-table.dark-mode {
     filter: invert(0.9); }
   table.rtr-table.bordered {
@@ -80,7 +83,7 @@ table.rtr-table {
   table.rtr-table tbody tr:hover td {
     box-shadow: inset 0 0 0 2px white;
     background-color: #eeeeee;
-    color: lightseagreen; }
+    color: var(--custom-color-table); }
   @media screen and (max-width: 600px) {
     table.rtr-table tbody td {
       display: block;
@@ -128,7 +131,7 @@ table.rtr-table {
       overflow: visible;
       opacity: 1;
       color: white;
-      background-color: lightseagreen; }
+      background-color: var(--custom-color-table); }
       table.rtr-table tbody tr.open td:first-child {
         margin-bottom: 0.5rem; }
       table.rtr-table tbody tr.open td:after {

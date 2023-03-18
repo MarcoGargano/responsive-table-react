@@ -3,6 +3,10 @@
 $breakpoint: 600px;
 $red: #cf0000;
 
+:root {
+  --custom-color-table: var(--custom-color-table);
+}
+
 table.rtr-table {
 	font-family: "Rubik", sans-serif;
 	font-weight: 300;
@@ -13,18 +17,18 @@ table.rtr-table {
 	background-color: #fff;
 	border-radius: 1rem;
 	position: relative;
-	&[class*="#cc0000"] {
+	&.custom-color {
 		tr:hover td {
 			@media screen and (min-width: 600px) {
-				color: $red;
+				color: var(--custom-color-table);
 			}
 			@media screen and (max-width: 600px) {
-				background-color: $red;
+				background-color: var(--custom-color-table);
 			}
 		}
 		@media screen and (max-width: 600px) {
 			td:not(:first-child):before {
-				color: $red;
+				color: var(--custom-color-table);
 			}
 		}
 	}
@@ -104,7 +108,7 @@ table.rtr-table {
 		tr:hover td {
 			box-shadow: inset 0 0 0 2px white;
 			background-color: rgba(238, 238, 238, 50%);
-			color: lightseagreen;
+			color: var(--custom-color-table);
 		}
 		@media screen and (max-width: 600px) {
 			td {
@@ -164,7 +168,7 @@ table.rtr-table {
 				overflow: visible;
 				opacity: 1;
 				color: white;
-				background-color: lightseagreen;
+				background-color: var(--custom-color-table);
 				&:after {
 					border-bottom: none;
 					border-right: none;

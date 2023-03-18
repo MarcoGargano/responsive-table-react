@@ -11,5 +11,9 @@ export const getDesignOptionsClasses = (designOptions: ResponsiveTableDesignOpti
     designOptionsArray.push('dark-mode')
   }
 
+  if(designOptions?.color){
+    designOptionsArray.push('custom-color')
+  }
+
   return designOptionsArray.join(" ")
 }

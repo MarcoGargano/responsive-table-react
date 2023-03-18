@@ -1,4 +1,4 @@
-import { ReactNode, useMemo, useState } from "react";
+import { CSSProperties, ReactNode, useCallback, useEffect, useMemo, useState } from "react";
 import "./Table.css";
 import { ResponsiveTableColumn, ResponsiveTableDesignOptions } from "./types";
 import { getDesignOptionsClasses } from "./utils";
@@ -9,17 +9,25 @@ export type TableProps = {
   designOptions?: ResponsiveTableDesignOptions
 };
 
-const ResponsiveTable:React.FC<TableProps> = ({ data, columns, designOptions }) => {
+const ResponsiveTable: React.FC<TableProps> = ({ data, columns, designOptions }) => {
   const columnsIds = columns.map(c => c.id)
   const rows = data.map(d => columnsIds.map(c => d[c]))
 
-  const Tr: React.FC<{row: ReactNode[], idx: number}> = ({row, idx}) => {
+  const Tr: React.FC<{ row: ReactNode[], idx: number }> = ({ row, idx }) => {
     const [isOpened, setIsOpened] = useState<boolean>(false)
 
     return <tr className={isOpened ? 'open' : ''} onClick={() => setIsOpened(!isOpened)} key={`responsive-table-row-${idx}`}>{row.map((value, idx) => <td data-label={columnsIds[idx]} key={`responsive-table-value-${idx}`}>{value}</td>)}</tr>;
   }
 
   const designOptionsClasses = useMemo(() => getDesignOptionsClasses(designOptions), [])
+
+  // Update color design option
+  useEffect(() => {
+    if (!designOptions?.color) {
+      return
+    }
+    document.documentElement.style.setProperty('--custom-color-table', designOptions?.color);
+  }, [])
 
   return (
     <table
@@ -43,11 +51,11 @@ const ResponsiveTable:React.FC<TableProps> = ({ data, columns, designOptions }) 
 
       <tbody>
         {rows.map((row, idx) => {
-          if(row.filter(Boolean).length === 0){
+          if (row.filter(Boolean).length === 0) {
             return null
           }
 
-          return <Tr row={row} idx={idx} key={`resposive-table-tr-${idx}`}/>
+          return <Tr row={row} idx={idx} key={`resposive-table-tr-${idx}`} />
         })}
       </tbody>
     </table>
