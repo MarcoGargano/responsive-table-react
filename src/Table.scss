@@ -59,13 +59,13 @@ table.rtr-table {
       font-size: 90%;
       border-bottom: solid 2px #fff;
       border: solid 1px #fff;
-      background-color: rgb(238 238 238 / 50%);
+      background-color: rgba(238, 238, 238, 50%);
       backdrop-filter: blur(5px);
       border-radius: 0.5rem;
     }
     @media screen and (max-width: $breakpoint) {
       tr {
-        background-color: rgb(255 255 255 / 50%);
+        background-color: rgba(255, 255, 255, 50%);
         backdrop-filter: blur(5px);
         display: block;
       }
@@ -89,7 +89,7 @@ table.rtr-table {
     }
     tr:hover td {
       box-shadow: inset 0 0 0 2px white;
-      background-color: rgb(238 238 238 / 50%);
+      background-color: rgba(238, 238, 238, 50%);
       color: lightseagreen;
     }
     @media screen and (max-width: 600px) {

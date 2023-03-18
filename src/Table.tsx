@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./Table.scss";
+import "./Table.css";
 import { TableProps } from "./types";
 
 const ResponsiveTable = ({ data, columns }: TableProps) => {
@@ -31,7 +31,7 @@ const ResponsiveTable = ({ data, columns }: TableProps) => {
           if(row.filter(Boolean).length === 0){
             return null
           }
-          
+
           return <tr key={`responsive-table-row-${idx}`}>{row.map((value, idx) => <td data-label={columnsIds[idx]} key={`responsive-table-value-${idx}`}>{value}</td>)}</tr>;
         })}
       </tbody>
