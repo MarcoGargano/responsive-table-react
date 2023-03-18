@@ -114,6 +114,6 @@ Set the master color
 
 ---
 
-## 🍕 Give me a pizza
+## 🍕 Give us a pizza
 
 If you like this component and you want to support us... [**PIZZAAA😋😋😋**](https://www.paypal.com/paypalme/MarcoGargano/10)
