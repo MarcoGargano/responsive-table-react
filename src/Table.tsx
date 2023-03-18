@@ -1,11 +1,16 @@
+import { ReactNode } from "react";
 import "./Table.scss";
 
+type ResponsiveTableColumn = {id: string, text: string}
+
 type TableProps = {
-  data: Record<string, string>[];
+  data: Record<string, ReactNode>[];
+  columns: ResponsiveTableColumn[]
 };
 
-const ResponsiveTable: React.FC<TableProps> = ({ data }) => {
-  const header = Object.keys(data[0]);
+const ResponsiveTable = ({ data, columns }: TableProps) => {
+  const columnsIds = columns.map(c => c.id)
+  const rows = data.map(d => columnsIds.map(c => d[c]))
 
   return (
     <table
@@ -19,24 +24,16 @@ const ResponsiveTable: React.FC<TableProps> = ({ data }) => {
     >
       <thead>
         <tr>
-          {header.map((label) => (
-            <th data-label={label} key={label}>
-              {label}
+          {columns.map((col, idx) => (
+            <th data-label={col.text} key={idx}>
+              {col.text}
             </th>
           ))}
         </tr>
       </thead>
 
       <tbody>
-        {data.map((d, idx) => (
-          <tr key={idx}>
-            {Object.entries(d).flatMap(([key, value]) => (
-              <td data-label={key} key={`${key}-tbody-${value}`}>
-                {value}
-              </td>
-            ))}
-          </tr>
-        ))}
+          {rows.map(row => <tr>{row.map((value, idx) => <td data-label={columnsIds[idx]}>{value}</td> )}</tr>)}
       </tbody>
     </table>
   );
