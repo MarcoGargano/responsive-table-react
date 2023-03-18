@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-export type ResponsiveTableColumn = { id: string, text: string }
+export type ResponsiveTableColumn = { id: string | number, text: string }
 
 export type TableProps = {
-  data: Record<string, ReactNode>[];
+  data: Record<string | number, ReactNode>[];
   columns: ResponsiveTableColumn[]
 };
