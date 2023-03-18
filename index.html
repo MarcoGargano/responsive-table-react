@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fun with table 🏓 | responsive-table-react</title>
+  <meta property="og:title" content="Fun with table 🏓" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description"
+    content="Super flexible &amp; responsive table, CSS only. 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows" />
+  <meta property="og:description"
+    content="Super flexible &amp; responsive table, CSS only. 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows" />
+  <link rel="canonical" href="https://marcogargano.github.io/responsive-table-react/" />
+  <meta property="og:url" content="https://marcogargano.github.io/responsive-table-react/" />
+  <meta property="og:site_name" content="responsive-table-react" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Fun with table 🏓" />
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Super flexible &amp; responsive table, CSS only. 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows","headline":"Fun with table 🏓","name":"responsive-table-react","url":"https://marcogargano.github.io/responsive-table-react/"}</script>
+
+  <link rel="stylesheet" href="/responsive-table-react/assets/css/style.css?v=5813315f809dac7325480e56e4c486e7f7232bf9">
+</head>
+
+<body>
+  <div class="container-lg px-3 my-5 markdown-body">
+    <h1 id="fun-with-table-">Fun with table 🏓</h1>
+    <h2 id="flexible--responsive-table-for-react">Flexible &amp; responsive table for React</h2>
+    <h3 id="️-on-desktop-as-a-classic-table--on-mobile-as-collapsable-rows">🖥️ On desktop as a classic table 📱 On
+      mobile as collapsable rows</h3>
+    <h3 id="a-super-user-friendly-experience-start-to-use-your-table-also-on-mobile">A super user-friendly experience,
+      start to use your table also on mobile!</h3>
+    <h4 id="discover">Discover:</h4>
+    <ul>
+      <li><a href="#-installation">🔧 Installation</a></li>
+      <li><a href="#-instruction">🔬 Instruction</a></li>
+      <li><a href="#-collaborators">😊 Collaborators</a></li>
+      <li><a href="#-give-me-a-pizza">🍕 Pizza time</a></li>
+    </ul>
+    <hr />
+    <h3 id="links">Links:</h3>
+    <ul>
+      <li>
+        <p>👉 <a href="https://codepen.io/marcogargano/full/vYzmPGG"><strong>Prototype demo</strong></a></p>
+      </li>
+      <li>
+        <p>👉 <a href="https://www.npmjs.com/package/responsive-table-react"><strong>NPM Package</strong></a> <br />
+          <img src="https://badgen.net/npm/v/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/npm/dw/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/npm/dt/responsive-table-react" alt="npm" />
+        </p>
+      </li>
+      <li>
+        <p>👉 <a href="https://github.com/MarcoGargano/responsive-table-react"><strong>GitHub Repository</strong></a>
+          <br />
+          <img src="https://badgen.net/github/stars/MarcoGargano/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/github/forks/MarcoGargano/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/github/tags/marcogargano/responsive-table-react" alt="github" />
+          <img src="https://badgen.net/github/last-commit/marcogargano/responsive-table-react" alt="github" />
+        </p>
+      </li>
+    </ul>
+    <hr />
+    <p><img src="https://iili.io/HWLD8Je.gif" width="100%" /></p>
+    <hr />
+    <h2 id="-installation">🔧 Installation</h2>
+    <p><strong>Install by NPM</strong>:</p>
+    <div class="language-plaintext highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight"><code>npm i responsive-table-react
+</code></pre>
+      </div>
+    </div>
+    <p>Here you can find the package on NPM: <a
+        href="https://www.npmjs.com/package/responsive-table-react">responsive-table-react</a>.</p>
+    <hr />
+    <h2 id="-instruction">🔬 Instruction</h2>
+    <p>Simple and high settable table for all devices, CSS only; create your component with a super tiny code</p>
+    <p>Import with</p>
+    <div class="language-js highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ResponsiveTable</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">responsive-table-react</span><span class="dl">"</span><span class="p">;</span>
+</code></pre>
+      </div>
+    </div>
+    <h3 id="example">Example</h3>
+    <div class="language-ts highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight"><code><span class="kd">const</span> <span class="nx">columns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Name</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">surname</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Surname</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+
+  <span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Mark</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">surname</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Garsin</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Gabriel</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">surname</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Betappi</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Gustav</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">surname</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Mahler</span><span class="dl">"</span><span class="p">,</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">ResponsiveTable</span> <span class="nx">columns</span><span class="o">=</span><span class="p">{</span><span class="nx">columns</span><span class="p">}</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">data</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
+</span>  <span class="p">)</span>
+</code></pre>
+      </div>
+    </div>
+
+    <h3 id="props">Props</h3>
+    <h3 id="designoptions">designOptions</h3>
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">bordered?: boolean</code> <br />
+          Add the border</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">dark?: boolean</code> <br />
+          Add the dark mode</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">color?: string</code> <br />
+          Set the master color</p>
+      </li>
+    </ul>
+    <hr />
+    <h2 id="-collaborators">😊 Collaborators</h2>
+    <ul>
+      <li>🦁 <a href="https://github.com/GabAlpha">Gabriele</a></li>
+      <li>🐷 <a href="https://github.com/MarcoGargano">Marco</a></li>
+      <li>🐻‍❄️ <a href="https://github.com/gustavodipietrogva">Gustavo</a></li>
+    </ul>
+    <hr />
+    <h2 id="-give-me-a-pizza">🍕 Give me a pizza</h2>
+    <p>If you like this component and you want to support us… <a
+        href="https://www.paypal.com/paypalme/MarcoGargano/10"><strong>PIZZAAA😋😋😋</strong></a></p>
+    <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+      This site is open source. <a
+        href="https://github.com/MarcoGargano/responsive-table-react/edit/master/README.md">Improve this page</a>.
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+    integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+  <script>anchors.add();</script>
+</body>
+
+</html>
