@@ -3,6 +3,7 @@
   "description": "Super flexible & responsive table, CSS only for React",
   "version": "1.2.2",
   "license": "MIT",
+  "homepage": "https://marcogargano.github.io/responsive-table-react/",
   "repository": {
     "type": "git",
     "url": "https://github.com/MarcoGargano/responsive-table-react"
