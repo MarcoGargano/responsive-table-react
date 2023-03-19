@@ -1,19 +1,21 @@
-import { ResponsiveTableDesignOptions } from "./types"
+import { ResponsiveTableDesignOptions } from "./types";
 
-export const getDesignOptionsClasses = (designOptions: ResponsiveTableDesignOptions | undefined) => {
-  let designOptionsArray = ['']
+export const getDesignOptionsClasses = (
+  designOptions: ResponsiveTableDesignOptions | undefined
+) => {
+  let designOptionsArray = [""];
 
-  if(designOptions?.bordered){
-    designOptionsArray.push('bordered')
+  if (designOptions?.bordered) {
+    designOptionsArray.push("bordered");
   }
 
-  if(designOptions?.dark){
-    designOptionsArray.push('dark-mode')
+  if (designOptions?.dark) {
+    designOptionsArray.push("dark-mode");
   }
 
-  if(designOptions?.color){
-    designOptionsArray.push('custom-color')
+  if (designOptions?.color) {
+    designOptionsArray.push("custom-color");
   }
 
-  return designOptionsArray.join(" ")
-}
+  return designOptionsArray.join(" ");
+};
