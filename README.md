@@ -63,12 +63,12 @@ import { ResponsiveTable } from "responsive-table-react";
 ```ts
 const columns = [
     {
-      "id": "name",
-      "text": "Name"
+      "field": "name",
+      "label": "Name"
     },
     {
-      "id": "surname",
-      "text": "Surname"
+      "field": "surname",
+      "label": "Surname"
     }
   ]
 
@@ -111,6 +111,7 @@ Set the master color
 - 🦁 [Gabriele](https://github.com/GabAlpha)
 - 🐷 [Marco](https://github.com/MarcoGargano)
 - 🐻‍❄️ [Gustavo](https://github.com/gustavodipietrogva)
+- 🦄 [Stefano](https://github.com/dr-wahrheit)
 
 ---
 
