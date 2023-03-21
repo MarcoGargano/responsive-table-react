@@ -3,7 +3,7 @@ import { ResponsiveTableDesignOptions } from "./types";
 export const getDesignOptionsClasses = (
   designOptions: ResponsiveTableDesignOptions | undefined
 ) => {
-  let designOptionsArray = [""];
+  const designOptionsArray = [];
 
   if (designOptions?.bordered) {
     designOptionsArray.push("bordered");

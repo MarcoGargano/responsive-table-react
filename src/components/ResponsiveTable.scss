@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
 
 :root {
-  --custom-color-table: lightseagreen;
+	--custom-color-table: lightseagreen;
 }
 
 table.rtr-table {
 	font-family: "Rubik", sans-serif;
 	font-weight: 300;
-  margin: 0;
+	margin: 0;
 	padding: 1rem;
 	box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
 	border: solid 1px #fff;
@@ -78,13 +78,13 @@ table.rtr-table {
 			font-size: 90%;
 			border-bottom: solid 2px #fff;
 			border: solid 1px #fff;
-			background-color: rgba(238, 238, 238, .5);
+			background-color: rgba(238, 238, 238, 0.5);
 			backdrop-filter: blur(5px);
 			border-radius: 0.5rem;
 		}
 		@media screen and (max-width: 600px) {
 			tr {
-				background-color: rgba(255, 255, 255, .5);
+				background-color: rgba(255, 255, 255, 0.5);
 				backdrop-filter: blur(5px);
 				display: block;
 			}
@@ -104,7 +104,7 @@ table.rtr-table {
 		}
 		tr:hover td {
 			box-shadow: inset 0 0 0 2px white;
-			background-color: rgba(238, 238, 238, .3);
+			background-color: rgba(238, 238, 238, 0.3);
 			color: var(--custom-color-table);
 		}
 		@media screen and (max-width: 600px) {

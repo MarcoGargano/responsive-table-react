@@ -1,4 +1,5 @@
-export type ResponsiveTableColumn = { id: string | number; text: string };
+export type ResponsiveTableColumn = { field: string; label: string };
+
 export type ResponsiveTableDesignOptions = {
   bordered?: boolean;
   dark?: boolean;
