@@ -6,21 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fun with table 🏓 | responsive-table-react</title>
-  <meta property="og:title" content="Fun with table 🏓" />
+  <meta property="og:title" content="Fun with table 🏓 | responsive-table-react" />
   <meta property="og:locale" content="en_US" />
   <meta name="description"
-    content="Super flexible &amp; responsive table, CSS only. 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows" />
+    content="Flexible & responsive table for React - A super user-friendly experience, start to use your table also on mobile!" />
   <meta property="og:description"
-    content="Super flexible &amp; responsive table, CSS only. 🖥️ On desktop as a classic table 📱 On mobile as collapsable rows" />
+    content="Flexible & responsive table for React - A super user-friendly experience, start to use your table also on mobile!" />
   <link rel="canonical" href="https://marcogargano.github.io/responsive-table-react/" />
   <meta property="og:url" content="https://marcogargano.github.io/responsive-table-react/" />
   <meta property="og:site_name" content="responsive-table-react" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
-  <meta property="twitter:title" content="Fun with table 🏓" />
-  <link rel="stylesheet" href="src/Table.css">
+  <meta property="twitter:title" content="Fun with table 🏓 | responsive-table-react" />
+  <link rel="stylesheet" href="src/components/ResponsiveTable.css">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap");
+
+    ::selection {
+      color: yellow;
+      background: black;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -31,13 +36,22 @@
       font-weight: 300;
     }
 
-    ::selection {
-      color: yellow;
-      background: black;
+    a,
+    a:focus,
+    a:visited {
+      color: #444;
+      text-decoration: none;
+      border-bottom: solid 1px #666;
     }
-    h2 {
-      padding-top: 3rem;
+
+    a:hover {
+      border-color: #ccc;
     }
+
+    h1 {
+      padding: 12rem 0 6rem;
+    }
+
     hr {
       padding: 0;
       margin: 4rem 0;
@@ -52,6 +66,24 @@
       background-color: yellow;
     }
 
+    pre {
+      display: block;
+      max-width: calc(100% - 1rem);
+      overflow: scroll;
+    }
+
+    small {
+      display: inline-block;
+    }
+
+    button {
+      background-color: var(--custom-color-table);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border: none;
+      border-radius: 0.4rem;
+    }
+
     ul {
       padding: 0px 20px;
     }
@@ -64,23 +96,31 @@
       width: 160px;
       display: inline-block;
     }
-
+img.shields {
+  border-radius: .3rem;
+  zoom: .8;
+}
     .container {
       position: relative;
       margin: 0 auto;
       width: 100%;
       max-width: 800px;
     }
+
     .nav {
       position: sticky;
       top: 0;
-      padding: .2rem 0;
+      padding: 4rem 0 2rem 0;
       z-index: 10;
+      background-color: rgba(255, 255, 255, .5);
+      backdrop-filter: blur(3px);
     }
+
     .nav li {
       display: inline-flex;
-      padding: .2rem 0;
+      padding: 0;
     }
+
     .nav li a {
       color: white;
       text-decoration: none;
@@ -91,13 +131,10 @@
       border-radius: 1rem;
       padding: .2rem .5rem;
     }
-    .video-wrap,
-    .table-wrap {
-      border: solid 1px #eee;
-      border-radius: 1rem;
-    }
 
     .video-wrap {
+      border: solid 1px #eee;
+      border-radius: 1rem;
       overflow: hidden;
     }
 
@@ -116,50 +153,61 @@
 
 <body>
   <div class="container">
-    <hr>
     <h1>Fun with table 🏓</h1>
     <h2>Flexible &amp; responsive table for React</h2>
-    <p>🖥️ On desktop as a classic table 📱 On mobile as collapsable rows</p>
     <h3>A super user-friendly experience, start to use your table also on mobile!</h3>
-    <hr />
-    <h2>Discover:</h2>
+    <img class="shields" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="">
+    <img class="shields" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="">
+    <img class="shields" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="">
+    <img class="shields" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="">
+    <p>🖥️ On desktop as a classic table</p>
+    <p>📱 On mobile as collapsable rows</p>
     <ul class="nav">
-      <li><a href="#-video">▶️ Video demo</a></li>
-      <li><a href="#-table">🕹️ Table demo</a></li>
-      <li><a href="#-installation">🔧 Installation</a></li>
-      <li><a href="#-instruction">🔬 Instruction</a></li>
-      <li><a href="#-props">🌊 Props</a></li>
+      <li><a href="#">☝️</a></li>
+      <li><a href="#-link">🚀 Link</a></li>
+      <li><a href="#-demo">🕹️ Demo</a></li>
+      <li><a href="#-how-to">🛠️ How to</a></li>
       <li><a href="#-collaborators">😊 Collaborators</a></li>
       <li><a href="#-give-me-a-pizza">🍕 Pizza time</a></li>
     </ul>
     <hr>
-    <h2>Links:</h2>
+    <h1 id="-link">🚀 Links:</h1>
     <ul>
       <li>
-        <p>👉 <a href="https://codepen.io/marcogargano/full/vYzmPGG"><strong>Prototype demo</strong></a></p>
-      </li>
-      <li>
-        <p>👉 <a href="https://www.npmjs.com/package/responsive-table-react"><strong>NPM Package</strong></a> <br />
+        <p>👉 <a href="https://www.npmjs.com/package/responsive-table-react" target="_blank"><strong>NPM
+          Package</strong></a>
+          <br /><br />
           <img src="https://badgen.net/npm/v/responsive-table-react" alt="npm" />
-          <img src="https://badgen.net/npm/dw/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/npm/dependents/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/npm/license/responsive-table-react" alt="npm" />
           <img src="https://badgen.net/npm/dt/responsive-table-react" alt="npm" />
         </p>
       </li>
       <li>
         <p>👉 <a href="https://github.com/MarcoGargano/responsive-table-react"><strong>GitHub Repository</strong></a>
-          <br />
-          <img src="https://badgen.net/github/stars/MarcoGargano/responsive-table-react" alt="npm" />
-          <img src="https://badgen.net/github/forks/MarcoGargano/responsive-table-react" alt="npm" />
-          <img src="https://badgen.net/github/tags/marcogargano/responsive-table-react" alt="github" />
+          <br /><br />
           <img src="https://badgen.net/github/last-commit/marcogargano/responsive-table-react" alt="github" />
+          <img src="https://badgen.net/github/stars/MarcoGargano/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/github/contributors/MarcoGargano/responsive-table-react" alt="npm" />
+          <img src="https://badgen.net/github/license/marcogargano/responsive-table-react" alt="github" />
+        </p>
+      </li>
+      <li>
+        <p>👉 <a href="https://codepen.io/marcogargano/full/vYzmPGG" target="_blank"><strong>CodePen</strong></a>
+        </p>
+      </li>
+      <li>
+        <p>👉 <a href="https://marcogargano.github.io/responsive-table-react/" target="_blank"><strong>GitHub Page</strong></a>
         </p>
       </li>
     </ul>
+
     <hr />
 
+    <h1 id="-demo">🕹️ Demo</h1>
     <h2 id="-video">▶️ Video demo</h2>
     <div class="video-wrap">
-      <video autoplay loop muted>
+      <video controls controlsList="nodownload" autoplay loop muted>
         <source src="https://www.marcogargano.com/video/responsive-table-react.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -167,7 +215,7 @@
     <!-- <img src="https://iili.io/HWLD8Je.gif" width="100%" /> -->
     <hr />
 
-    <h2 id="-table">🕹️ Demo table</h2>
+    <h2 id="-table">🪜 Demo table</h2>
     <div class="table-wrap">
       <table class="rtr-table" cellpadding="0" cellspacing="0" border="0" bgcolor="#eeeeee" align="left" valign="center"
         width="100%">
@@ -324,15 +372,21 @@
         </tbody>
       </table>
     </div>
+    <p>
+      Try me:
+      <button id="table-bordered" type="button">🚀 TRY WOW STYLE</button>
+      <button id="table-dark" type="button">😈 DARK MODE</button>
+    </p>
     <p>Resize the window to check 😉</p>
 
     <hr />
 
+    <h1 id="-how-to">🛠️ How to</h1>
     <h2 id="-installation">🔧 Installation</h2>
     <h4>Install by NPM</h4>
     <pre><code>npm i responsive-table-react</code></pre>
     <p>Here you can find the package on NPM: <a
-        href="https://www.npmjs.com/package/responsive-table-react">responsive-table-react</a>.</p>
+        href="https://www.npmjs.com/package/responsive-table-react">responsive-table-react</a></p>
 
     <hr />
 
@@ -342,7 +396,7 @@
     <pre
       class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ResponsiveTable</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">responsive-table-react</span><span class="dl">"</span><span class="p">;</span></code></pre>
 
-    <h4>Example</h4>
+    <h4>Const example:</h4>
     <pre class="highlight"><code><span class="kd">const</span> <span class="nx">columns</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">{</span>
       <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
@@ -376,7 +430,7 @@
     <hr>
 
     <h2 id="-props">🌊 Props</h2>
-    <h4>designOptions</h4>
+    <h4>Set the designOptions:</h4>
     <ul>
       <li><span>Add the border:</span> <code>bordered?: boolean</code> <small>// es: bordered?: true</small></li>
       <li><span>Add the dark mode:</span> <code>dark?: boolean</code> <small>// es: dark?: true</small></li>
@@ -384,18 +438,20 @@
     </ul>
     <hr />
 
-    <h2 id="-collaborators">😊 Collaborators</h2>
+    <h1 id="-collaborators">😊 Collaborators</h1>
+    <p>Funny time with:</p>
     <ul>
       <li>🦁 <a href="https://github.com/GabAlpha">Gabriele</a></li>
-      <li>🐷 <a href="https://github.com/MarcoGargano">Marco</a></li>
+      <li>🦊 <a href="https://github.com/MarcoGargano">Marco</a></li>
       <li>🐻‍❄️ <a href="https://github.com/gustavodipietrogva">Gustavo</a></li>
+      <li>🐰 <a href="https://github.com/gustavodipietrogva">Stefano</a></li>
     </ul>
 
     <hr />
 
-    <h2 id="-give-me-a-pizza">🍕 Give us a pizza</h2>
+    <h1 id="-give-me-a-pizza">🍕 Give us a pizza</h1>
     <p>If you like this component and you want to support us... <a
-        href="https://www.paypal.com/paypalme/MarcoGargano/10"><strong>PIZZAAA😋😋😋</strong></a></p>
+        href="https://www.paypal.com/paypalme/MarcoGargano/10" target="_blank"><strong>PIZZAAA TIME!!! 😋😋😋</strong></a></p>
 
     <hr>
   </div>
@@ -403,6 +459,12 @@
   <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
     integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
   <script>
+    $("#table-bordered").click(function () {
+      $(".rtr-table").toggleClass("bordered");
+    });
+    $("#table-dark").click(function () {
+      $(".rtr-table").toggleClass("dark-mode");
+    });
     $(".rtr-table tr").click(function () {
       $(this).toggleClass("open");
     });
