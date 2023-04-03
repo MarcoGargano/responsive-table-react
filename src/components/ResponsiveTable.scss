@@ -11,6 +11,7 @@ table.rtr-table {
 	background-color: #fff;
 	border-radius: 1rem;
 	position: relative;
+  float: none;
 	&.custom-color {
 		tr:hover td {
 			@media screen and (min-width: 600px) {
@@ -177,6 +178,44 @@ table.rtr-table {
 				color: #333;
 				padding: 0.7rem 1rem 0.5rem;
 			}
+		}
+	}
+}
+
+.rtr-table-more {
+	padding: 2rem;
+	text-align: center;
+	& button {
+		position: relative;
+		height: 2.6rem;
+		width: 10rem;
+		font-size: 0;
+		border: none;
+		border-radius: 100vw;
+		transition: all .4s ease-in-out;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			display: block;
+			top: 11px;
+			left: calc(50% - 2px);
+			background-color: var(--custom-color-table);
+			border-radius: 100px;
+		}
+		&:before {
+			width: 20px;
+			height: 3px;
+			top: calc(50% - 2px);
+			left: calc(50% - 11px);
+		}
+		&::after {
+			width: 3px;
+			height: 20px;
+		}
+		&:hover {
+			width: 6rem;
+			background-size: 1.2rem;
+			cursor: pointer;
 		}
 	}
 }

@@ -93,7 +93,9 @@ const ResponsiveTable: React.FC<TableProps> = ({
           })}
         </tbody>
       </table>
-      <span onClick={() => loadMore()}>Load more...</span>
+      <div className="rtr-table-more">
+        <button type="button" onClick={() => loadMore()}>+</button>
+      </div>
     </Fragment>
   );
 };
